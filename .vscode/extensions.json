@@ -1,0 +1,10 @@
+{
+  "recommendations": [
+    "stylelint.vscode-stylelint",
+    "esbenp.prettier-vscode",
+    "dbaeumer.vscode-eslint",
+    "dsznajder.es7-react-js-snippets",
+    "kbatkov.ecsstractor-tsx-port",
+    "aaron-bond.better-comments"
+  ]
+}

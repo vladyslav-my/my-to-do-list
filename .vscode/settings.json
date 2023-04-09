@@ -1,0 +1,23 @@
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[scss]": {
+    "editor.defaultFormatter": null
+  },
+  "editor.formatOnSave": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+    "source.fixAll.stylelint": true
+  },
+  "scss.validate": false,
+  "stylelint.validate": ["scss"],
+  
+  "editor.tabSize": 3,
+  "editor.insertSpaces": true,
+  "editor.detectIndentation": true,
+
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "ecsstractor_tsx_port.attributes": "className",
+  "ecsstractor_tsx_port.bem_nesting": true
+}
