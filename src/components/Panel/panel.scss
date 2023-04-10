@@ -3,4 +3,36 @@
 
    border: rem(2) solid $gray;
    border-radius: rem(2);
+
+   & >*:not(:last-child) {
+      margin-bottom: rem(12);
+   }
+
+   // .panel__title
+
+   &__title {
+      display: inline-flex;
+      align-items: center;
+      flex-direction: column;
+     
+
+      font-size: rem(20);
+      font-weight: 400;
+
+      &::after {
+         width: rem(30);
+         height: rem(4);
+
+         content: '';
+
+         border-radius: rem(5);
+
+         background-color: currentColor;
+      } 
+   }
+
+   // .panel__action
+
+   &__action {
+   }
 }

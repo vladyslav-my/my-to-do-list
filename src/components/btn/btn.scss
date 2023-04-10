@@ -1,0 +1,32 @@
+.btn {
+   display: inline-flex;
+   align-items: center;
+
+   padding: rem(5) rem(10);
+
+   transition: background 0.3s ease;
+
+   color: $btnDefault;
+
+   border: rem(1) solid currentColor;
+   border-radius: rem(8);
+   background-color: transparent;
+
+   font-size: rem(14);
+
+   &_active { 
+      background-color: currentColor;
+      .btn__label {
+         color: #fff;
+      }
+   }
+   &_red {color: $btnRed}
+   &_green {color: $btnGreen}
+   &_yellow {color: $btnYellow}
+   &_blue {color: $btnBlue}
+}
+
+
+
+
+

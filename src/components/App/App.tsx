@@ -1,7 +1,9 @@
 /* eslint-disable jsx-a11y/control-has-associated-label */
 import Shell from '../shell/Shell';
 import Notebook from '../notebook/Notebook';
+import Panel from '../panel/Panel';
 import './app.scss';
+import Btn from '../btn/Btn';
 
 function App() {
    return (
@@ -15,7 +17,11 @@ function App() {
                <div>Space</div>
             </Shell>
             <Shell className="app__shell">
-               <div>Space</div>
+               <Panel title="Hello world">
+                  <Btn className="btn_red" label="Label" />
+                  <Btn className="btn_yellow" label="Label" />
+                  <Btn className="btn_blue btn_active" label="Label" />
+               </Panel>
             </Shell>
          </div>
       </main>
