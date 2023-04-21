@@ -1,0 +1,17 @@
+.action-content {
+   display: flex;
+   flex-direction: column;
+   row-gap: rem(6);
+   
+
+   // .action-content__subtitle
+
+   &__subtitle {
+      font-size: rem(16);
+   }
+
+   // .action-content__action
+
+   &__action {
+   }
+}

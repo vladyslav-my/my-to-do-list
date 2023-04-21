@@ -3,16 +3,10 @@
 
    &__container {
       display: grid;
-      align-content: center;
-      flex-direction: column;
-      justify-content: center;
 
       min-height: 100vh;
-      justify-items: start;
-         
-      & > *:not(:last-child) {
-         margin-bottom: rem(10);
-      }
+
+      transition: all 1s ease-out;
 
       & > .title-app:not(:last-child) {
          margin-bottom: rem(20);
@@ -24,23 +18,56 @@
    // .app__title
 
    &__title {
-      
+      align-self: center;
    }
+
+   // .app__shell-wrapper
+
+   &__shell-wrapper {
+      display: grid;
+      align-self: start;
+
+      justify-content: center;
+
+      
+      transition: all 1s ease-out;
+      // .app__shell-wrapper_center-content
+      &_center-content {
+         justify-content: center;
+      }
+
+      & > *:not(:last-child) {
+         margin-bottom: rem(10);
+      }
+   }
+
 
    // .app__shell
 
    &__shell {
+      transition: all 1s ease-out;
       
+      &_main {
+         display: grid;
+
+         // min-width: rem($maxWidthContainer);
+
+         transition: all 1s ease-out;
+         grid-auto-columns: 1fr 1.3fr;
+         grid-template-rows: repeat(3, auto);
+         grid-gap: rem(12);
+         grid-auto-flow: column;
+      }
+
       // .app__shell_nav
 
       &_nav {
+         max-width: rem(300);
          padding: rem(6);
+
+         transition: all 1s ease-out;
       }
    }
-   
-   
-
-
 }
 
 
@@ -69,3 +96,6 @@
       
    }
 }
+
+
+

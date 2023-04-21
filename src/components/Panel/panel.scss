@@ -1,8 +1,13 @@
 .panel {
+   display: flex;
+   flex-direction: column;
+
    padding: rem(12);
 
+   transition: all 1s ease-out;
+
    border: rem(2) solid $gray;
-   border-radius: rem(2);
+   border-radius: rem(10);
 
    & >*:not(:last-child) {
       margin-bottom: rem(12);
@@ -13,26 +18,33 @@
    &__title {
       display: inline-flex;
       align-items: center;
-      flex-direction: column;
-     
+      justify-content: center;
 
       font-size: rem(20);
       font-weight: 400;
+      column-gap: rem(4);
 
-      &::after {
-         width: rem(30);
-         height: rem(4);
+      //! decoration
+      // &::before { 
+      //    width: rem(12);
+      //    height: rem(3);
 
-         content: '';
+      //    content: '';
 
-         border-radius: rem(5);
+      //    border-radius: rem(3);
 
-         background-color: currentColor;
-      } 
+      //    background-color: currentColor;
+      // }
    }
 
-   // .panel__action
+   // .panel__content
 
-   &__action {
+   &__content {
+      display: flex;
+      flex-direction: column;
+
+      & > *:not(:last-child) {
+         margin-bottom: rem(16);
+      }
    }
 }

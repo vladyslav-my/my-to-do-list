@@ -1,0 +1,53 @@
+.checkbox {
+  position: relative;
+
+  display: inline-block;
+
+  width: em(18);
+  height: em(18);
+
+  cursor: pointer;
+  
+
+  // .checkbox__input
+
+  &__input {
+    position: absolute;
+    right: 0;
+    left: 0;
+
+    width: em(18);
+    height: em(18);
+
+  }
+
+  // .checkbox__cheched
+
+  &__cheched {
+    position: absolute;
+    bottom: rem(3);
+    left: rem(3);
+
+    width: em(20);
+    height: em(20);
+
+    transition: opacity 150ms ease-in-out;
+
+    opacity: 0;
+
+  }
+
+  &.isChecked > &__cheched {
+    opacity: 1;
+  }
+}
+
+.svg-checkbox {
+  fill: #333;
+}
+
+
+
+
+
+ 
