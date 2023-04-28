@@ -8,6 +8,7 @@ $layoutColor: linear-gradient(88.78deg, #B9B8E2 25.33%, #C2E0FC 105.16%);
 
 $white: #fff;
 $gray: #bbb;
+$red: #f54236;
 $whiteText: #fff;
 
 $btnDefault: #BABAE4;
@@ -19,9 +20,10 @@ $btnBlue: #004AB9;
 
 
 //* Налаштування сторінки:
-$minWidth: 320; //? мінімальна ширина полотна(макета)
+$minWidth: 767.98; //? мінімальна ширина полотна(макета)
 $maxWidth: 1440; //? ширина полотна(макета)
 $maxWidthContainer: 840; //? ширина обмежувального контейнера (0 = немає обмежень)
+// $maxWidthContainer: 500;
 $containerPadding: 15; //? відступи безпеки у контейнера
 $containerWidth: $maxWidthContainer + $containerPadding * 2; //? ширина спрацьовування першого контейнера
 

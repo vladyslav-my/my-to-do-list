@@ -1,3 +1,15 @@
 //* підключення шрифтів з google fonts:
 //! &display=swap
 @import url("https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic&display=swap");
+
+@font-face {
+   font-family: 'checkbox';
+   src:
+     url('../fonts/checkbox.ttf') format('truetype'),
+     url('../fonts/checkbox.woff') format('woff'),
+     url('../fonts/checkbox.svg') format('svg');
+
+   font-weight: normal;
+   font-style: normal;
+   font-display: block;
+ }

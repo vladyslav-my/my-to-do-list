@@ -1,0 +1,11 @@
+.tasks {
+   display: flex;
+   flex-direction: column;
+   row-gap: rem(8);
+
+   // .tasks__item
+
+   &__item {
+      flex: 0 0 auto;
+   }
+}

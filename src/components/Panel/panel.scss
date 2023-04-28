@@ -1,40 +1,55 @@
 .panel {
-   display: flex;
-   flex-direction: column;
-
-   padding: rem(12);
-
-   transition: all 1s ease-out;
+   $p: &;
 
    border: rem(2) solid $gray;
    border-radius: rem(10);
 
-   & >*:not(:last-child) {
-      margin-bottom: rem(12);
+   // .panel__box
+
+   &__box {
+      display: grid;
+      grid-auto-rows: auto 1fr;
+
+      height: 100%;
+      padding: rem(12);
+      
+      transition: all 1s ease-out;
+      
+      row-gap: rem(12);
    }
+
+   &_content {
+      
+      &_scroll {
+         #{$p}__content {
+            position: relative;
+
+            overflow-y: scroll;
+
+            margin-right: rem(-12);
+            @extend %scroll;
+         }
+      }  
+   }
+
+   &_box {
+      &_auth {
+         #{$p}__content {
+            align-items: center;
+
+            max-width: 300px;
+            margin: 0 auto;
+         }
+      }
+   }
+
 
    // .panel__title
 
    &__title {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
+      justify-self: center;
 
       font-size: rem(20);
-      font-weight: 400;
-      column-gap: rem(4);
-
-      //! decoration
-      // &::before { 
-      //    width: rem(12);
-      //    height: rem(3);
-
-      //    content: '';
-
-      //    border-radius: rem(3);
-
-      //    background-color: currentColor;
-      // }
    }
 
    // .panel__content
@@ -42,9 +57,46 @@
    &__content {
       display: flex;
       flex-direction: column;
+      row-gap: rem(16);
+   }
 
-      & > *:not(:last-child) {
-         margin-bottom: rem(16);
-      }
+
+   &__tasks {
+      position: absolute;
+      left: 50%;
+
+      width: 95%;
+
+      transform: translateX(-50%);
+   }
+}
+
+
+
+%scroll {
+   &::-webkit-scrollbar {
+      width: rem(12);
+
+      border-radius: rem(20);
+   }
+
+   &::-webkit-scrollbar-track-piece {
+      background-color: $white;
+   }
+    
+   &::-webkit-scrollbar-track {
+      border-radius: rem(20);
+      background-color: #f1f1f1;
+   }
+    
+   &::-webkit-scrollbar-thumb {
+      transition: background-color 0.5s ease-in-out;
+      
+      border-radius: rem(20);
+      background-color: #C1D9F7;
+   }
+    
+   &::-webkit-scrollbar-thumb:hover {
+      background-color: #BBC1E8;
    }
 }

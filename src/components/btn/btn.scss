@@ -1,10 +1,11 @@
 .btn {
+   $p: &;
    display: inline-flex;
    align-items: center;
 
    padding: rem(5) rem(10);
 
-   transition: background 0.3s ease;
+   transition: color, background, 0.3s ease;
 
    color: $btnDefault;
 
@@ -16,7 +17,7 @@
 
    &_active { 
       background-color: currentColor;
-      .btn__label {
+      #{$p}_label {
          color: #fff;
       }
    }
