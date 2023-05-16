@@ -7,12 +7,19 @@
 		"dev": "vite",
 		"build": "tsc && vite build",
 		"preview": "vite preview",
+		"json-server": "json-server --watch server/DB.json",
 		"lint:scss": "stylelint src/scss.scss",
 		"lint:scss:fix": "npm run lint:scss --fix"
 	},
 	"dependencies": {
+		"@reduxjs/toolkit": "^1.9.5",
+		"axios": "^1.4.0",
+		"classnames": "^2.3.2",
 		"react": "^18.2.0",
-		"react-dom": "^18.2.0"
+		"react-dom": "^18.2.0",
+		"react-redux": "^8.0.5",
+		"react-router-dom": "^6.11.1",
+		"react-transition-group": "^4.4.5"
 	},
 	"devDependencies": {
 		"@types/classnames": "^2.3.1",
@@ -22,7 +29,6 @@
 		"@typescript-eslint/eslint-plugin": "^5.57.1",
 		"@typescript-eslint/parser": "^5.57.1",
 		"@vitejs/plugin-react-swc": "^3.0.0",
-		"classnames": "^2.3.2",
 		"eslint": "^8.2.0",
 		"eslint-config-airbnb": "^19.0.4",
 		"eslint-config-airbnb-typescript": "^17.0.0",
@@ -32,6 +38,7 @@
 		"eslint-plugin-prettier": "^4.2.1",
 		"eslint-plugin-react": "^7.32.2",
 		"eslint-plugin-react-hooks": "^4.3.0",
+		"json-server": "^0.17.3",
 		"prettier": "^2.8.7",
 		"sass": "^1.60.0",
 		"stylelint": "^15.4.0",

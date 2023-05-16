@@ -1,0 +1,160 @@
+{
+  "users": [
+    {
+      "id": 0,
+      "login": "Vladislav",
+      "email": "vladisl13777@gmail.com",
+      "password": "123456"
+    },
+    {
+      "id": 1,
+      "login": "Vlwelrewlrre",
+      "email": "vlwlfwlwefl@gmail.com",
+      "password": "lerewlrlwrew@gmail.com"
+    },
+    {
+      "id": 2,
+      "login": "Vlwelrewlrre",
+      "email": "vlwlfwlwefl@gmail.com",
+      "password": "lerewlrlwrew@gmail.com"
+    },
+    {
+      "login": "123k12;",
+      "email": "qweqw",
+      "password": "qweqweqw",
+      "id": 3
+    }
+  ],
+  "tasks": [
+    {
+      "id": 0,
+      "list": [
+        {
+          "id": 0,
+          "message": "",
+          "color": "red",
+          "checked": false,
+          "done": false
+        },
+        {
+          "user_id": 0,
+          "id": 1,
+          "message": "",
+          "color": "red",
+          "checked": false,
+          "done": false
+        }
+      ],
+      "userId": 0
+    },
+    {
+      "id": 1,
+      "list": [
+        {
+          "id": 0,
+          "message": "",
+          "color": "red",
+          "checked": false,
+          "done": false
+        },
+        {
+          "user_id": 0,
+          "id": 1,
+          "message": "",
+          "color": "red",
+          "checked": false,
+          "done": false
+        }
+      ],
+      "userId": 1
+    }
+  ],
+  "btnsActive": [
+    {
+      "user_id": 1,
+      "addTask": {
+        "markColor": "default"
+      },
+      "filtersTask": {
+        "markColor": "all",
+        "status": "all"
+      },
+      "selectionAction": {
+        "markColor": "default"
+      }
+    }
+  ],
+  "btns": {
+    "commonMarkColor": [
+      {
+        "label": "Default",
+        "name": "default"
+      },
+      {
+        "label": "Red",
+        "name": "red",
+        "className": "btn_red"
+      },
+      {
+        "label": "Green",
+        "name": "green",
+        "className": "btn_green"
+      },
+      {
+        "label": "Yellow",
+        "name": "yellow",
+        "className": "btn_yellow"
+      },
+      {
+        "label": "Blue",
+        "name": "blue",
+        "className": "btn_blue"
+      }
+    ],
+    "sections": {
+      "addTask": {
+        "markColor": [
+          "commonMarkColor"
+        ]
+      },
+      "filtersTask": {
+        "markColor": [
+          {
+            "label": "All",
+            "name": "all"
+          },
+          "commonMarkColor"
+        ],
+        "status": [
+          {
+            "label": "All",
+            "name": "all"
+          },
+          {
+            "label": "Done",
+            "name": "done"
+          },
+          {
+            "label": "To-do",
+            "name": "to-do"
+          }
+        ]
+      },
+      "selectionAction": {
+        "markColor": [
+          "commonMarkColor"
+        ],
+        "status": [
+          {
+            "label": "Delete",
+            "name": "delete"
+          },
+          {
+            "label": "Done",
+            "name": "done"
+          }
+        ]
+      }
+    }
+  }
+}

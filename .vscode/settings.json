@@ -19,5 +19,8 @@
     "javascript": "javascriptreact"
   },
   "ecsstractor_tsx_port.attributes": "className",
-  "ecsstractor_tsx_port.bem_nesting": true
+  "ecsstractor_tsx_port.bem_nesting": true,
+  "path-intellisense.mappings": {
+    "@": "${workspaceFolder}/src"
+  }
 }

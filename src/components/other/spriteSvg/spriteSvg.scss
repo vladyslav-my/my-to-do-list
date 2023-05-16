@@ -1,0 +1,15 @@
+.svg-icon {
+   cursor: pointer;
+   &_icons {
+      box-sizing: content-box;
+      width: rem(18);
+      height: rem(18);
+      padding: rem(5);
+   }
+
+   &_checkbox {
+
+   }
+}
+
+

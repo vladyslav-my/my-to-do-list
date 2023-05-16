@@ -3,8 +3,11 @@
 
    &__container {
       display: grid;
+      flex-direction: column;
 
-      min-height: 100vh;
+      min-height: calc(100vh - rem(95));
+      
+      grid-template-rows: max-content 1fr;
 
       transition: all 1s ease-out;
       row-gap: rem(20);
@@ -19,7 +22,8 @@
 
    &__shell-wrapper {
       display: grid;
-      align-self: start;
+      // align-self: start;
+      align-self: center;
       row-gap: rem(10);
    }
 

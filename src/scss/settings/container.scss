@@ -9,7 +9,7 @@
 		}
 
 		@if $containerPadding > 0 {
-			padding: 0 rem($containerPadding);
+			padding: rem($containerPadding);
 		}
 	}
 } @else {

@@ -1,0 +1,13 @@
+.main-page {
+   display: grid;
+   grid-auto-columns: 1fr 1.2fr;
+   grid-template-rows: repeat(3, auto);
+   grid-gap: rem(12);
+   grid-auto-flow: column;
+
+   // .main-page__extended
+
+   &__extended {
+      grid-row: span 3;
+   }
+}
