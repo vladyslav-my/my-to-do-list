@@ -8,19 +8,18 @@ import AddTask from '@/components/shared/addTask/AddTask';
 import GroupBtns from '@/components/blocks/groupBtns/GroupBtns';
 import Tasks from '@/components/other/tasks/Tasks';
 import Skeleton from '@/components/other/skeleton/Skeleton';
-import { responseBtns } from '@/api/api.js';
-import { fetchBtns } from '@/store/actions';
 import Shell from '@/components/blocks/shell/Shell';
 import LogIn from '@/components/navBar/logIn/LogIn';
+import { fetchBtns } from '@/store/reducers/ActionCreators.js';
 
 function MainPage() {
-   const { btns } = useSelector((state) => state.btns);
+   const { btns } = useSelector((state) => state.btnsReducer);
    const dispatch = useDispatch();
    useEffect(() => {
-      dispatch(fetchBtns(responseBtns));
+      dispatch(fetchBtns());
    }, []);
    return (
-      <div className="main-page">
+      <div className="conteiner-panels">
          <Panel title="Add task">
             <ActionContent className="" subtitle="Note" action={<AddTask />} />
             <ActionContent
@@ -54,7 +53,7 @@ function MainPage() {
             />
          </Panel>
          <Panel
-            className="panel_content_scroll main-page__extended"
+            className="panel_content_scroll conteiner-panels__extended"
             title="All your tasks"
          >
             <Tasks className="panel__tasks" />

@@ -49,7 +49,7 @@ const Btns = ({ data }) => {
 };
 
 const GroupBtns: FC<GroupBtnsProps> = ({ data }) => {
-   const { status } = useSelector((state) => state.btns);
+   const { status } = useSelector((state) => state.btnsReducer);
    return (
       <div className="group-btns">
          {status === 'emty' || status === 'loading' ? (

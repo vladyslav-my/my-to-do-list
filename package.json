@@ -7,7 +7,7 @@
 		"dev": "vite",
 		"build": "tsc && vite build",
 		"preview": "vite preview",
-		"json-server": "json-server --watch server/DB.json",
+		"json-server": "json-server --watch server/DB.json --port 8009",
 		"lint:scss": "stylelint src/scss.scss",
 		"lint:scss:fix": "npm run lint:scss --fix"
 	},
